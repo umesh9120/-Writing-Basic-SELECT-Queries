@@ -28,18 +28,22 @@ salary (INT)
 SELECT * FROM employees_data;
 SELECT id FROM employees_data;
 SELECT name FROM employees_data;
+
 2️⃣ Filtering Data
 
 SELECT * FROM employees_data WHERE salary < 40000;
 SELECT * FROM employees_data WHERE salary < 40000 AND age < 25;
 SELECT * FROM employees_data WHERE salary > 45000 OR age < 25;
+
 3️⃣ Range & Set Matching
 
 SELECT * FROM employees_data WHERE salary BETWEEN 35000 AND 40000;
 SELECT * FROM employees_data WHERE age IN (21,22,23,24);
+
 4️⃣ Pattern Matching
 
 SELECT * FROM employees_data WHERE name LIKE 'S%';
+
 5️⃣ Sorting
 
 SELECT * FROM employees_data ORDER BY salary ASC;
